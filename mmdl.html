@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving License Display</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .license-card {
+            width: 400px;
+            background-color: white;
+            border: 2px solid #9acd32;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        /* ပို့ပေးထားတဲ့ Background Pattern ကို ဤနေရာတွင် အစားထိုးနိုင်သည် */
+        .card-content {
+            background-image: url('1000027734.jpg'); 
+            background-size: 150px;
+            background-repeat: repeat;
+            padding: 15px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .header img {
+            width: 70px;
+            height: auto;
+        }
+
+        .header-text {
+            font-size: 12px;
+            font-weight: bold;
+            color: #1a237e;
+            line-height: 1.4;
+        }
+
+        .profile-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 180px;
+            border: 3px solid #9acd32;
+            object-fit: cover;
+        }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .value {
+            background-color: #e6ffb3; /* ပုံထဲကလို အစိမ်းနုရောင် highlight */
+            padding: 4px 8px;
+            font-weight: bold;
+            font-size: 15px;
+            color: #000;
+            display: block;
+            border-radius: 2px;
+        }
+
+        .address-value {
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .footer-link {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            border-top: 1px solid #ddd;
+            background: #fff;
+        }
+
+        a { color: blue; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="license-card">
+    <div class="card-content">
+        <div class="header">
+            <img src="1000027731.jpg" alt="Logo">
+            <div class="header-text">
+                ပြည်ထောင်စုသမ္မတမြန်မာနိုင်ငံတော်<br>
+                ပို့ဆောင်ရေးနှင့် ဆက်သွယ်ရေးဝန်ကြီးဌာန<br>
+                ကုန်းလမ်းပို့ဆောင်ရေးညွှန်ကြားမှုဦးစီးဌာန
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <img src="download.jpg" alt="Profile" class="profile-img">
+        </div>
+
+        <div class="info-row">
+            <div class="label">License Number</div>
+            <div class="value">B/00424/18</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">Name</div>
+            <div class="value">MYINT MOE</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">NRC Number</div>
+            <div class="value">10/MALAMA(N)204910</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">Date of Birth</div>
+            <div class="value">29.12.1988</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">Blood Type</div>
+            <div class="value">O</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">Expiry Date</div>
+            <div class="value">24.01.2028</div>
+        </div>
+
+        <div class="info-row">
+            <div class="label">License Type</div>
+            <div class="value">B</div>
+        </div>
+        <div class="info-row">
+            <div class="label">Address</div>
+            <div class="value address-value">3, 9-ST, SHWE MYAING THIRI QTR, MAWLAMYAING TSP.</div>
+        </div>
+    </div>
+
+    <div class="footer-link">
+        Mobile view | <a href="#">Switch to Desktop</a>
+    </div>
+</div>
+
+</body>
+</html>
